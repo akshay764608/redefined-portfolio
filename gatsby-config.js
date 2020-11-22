@@ -1,15 +1,22 @@
 require(`dotenv`).config({
   path: `.env`,
-})
+});
 
-const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
+const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE;
 
 module.exports = {
   siteMetadata: {
     // You can overwrite values here that are used for the SEO component
     // Of course you can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/master/themes/gatsby-theme-cara/gatsby-config.js
-    siteTitleAlt: `Cara - Gatsby Starter Portfolio`,
+    siteTitle: `Akshay`,
+    siteTitleAlt: `Akshay-Portfolio-Redefined`,
+    siteHeadline: `Akshay - Gatsby Portfolio`,
+    siteUrl: `https://cara.lekoarts.de`,
+    siteDescription: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
+    siteLanguage: `en`,
+    siteImage: `/banner.png`,
+    author: `@akshay_kumar`,
   },
   plugins: [
     {
@@ -58,4 +65,4 @@ module.exports = {
       },
     },
   ].filter(Boolean),
-}
+};
